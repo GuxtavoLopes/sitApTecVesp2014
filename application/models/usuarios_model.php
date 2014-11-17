@@ -11,14 +11,13 @@ class Usuarios_model extends CI_Model {
 
     function inserir($data) {
         //Inserção na tabela usuario
-        //print_r($data); die();
         return $this->db->insert('usuario', $data);
     }
 
     function listar() {
         //Listagem da tabela usuário
         $query = $this->db
-                ->order_by('nome','asc')
+                ->order_by('nome','asc') //Ordem alfabética
                 ->get('usuario');
         
         return $query->result();

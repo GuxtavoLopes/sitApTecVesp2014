@@ -14,9 +14,13 @@ class Usuarios extends CI_Controller {
     }
 
     function index() {
-        $data['titulo'] = "CRUD com CodeIgniter | Cadastro de Usuários";
+//        $data['titulo'] = "CRUD com CodeIgniter | Cadastro de Usuários";
         $data['usuarios'] = $this->usuarios_model->listar();
-        $this->load->view('usuarios_view.php', $data);
+//        $this->load->view('usuarios_view.php', $data);
+
+        $this->load->view('home_header');
+        $this->load->view('home_content_usuario',$data);
+        $this->load->view('home_sidebar');
     }
 
     /**
@@ -46,6 +50,11 @@ class Usuarios extends CI_Controller {
             /* Senão, caso sucesso na validação... */
         } else {
             /* Recebe os dados do formulário (visão) */
+            /**
+             * É criado o array $data com os nomes dos campos
+             * presentes no Banco de dados e então são preenchidos
+             * coms os valores vindo do formulário através dp POST
+             */
             $data['nome'] = $this->input->post('nome');
             $data['email'] = $this->input->post('email');
             $data['senha'] = $this->input->post('senha');
@@ -55,12 +64,10 @@ class Usuarios extends CI_Controller {
             $data['estado'] = $this->input->post('estado');
             $data['cep'] = $this->input->post('cep');
             $data['foto'] = $this->input->post('foto');
-            
-            
+
             /**
              * TODO: Deve colocar mais campos!!!
              */
-
             /* Carrega o modelo */
             //$this->load->model('pessoas_model');
 
@@ -74,9 +81,9 @@ class Usuarios extends CI_Controller {
     }
 
     function editar($idusuario) {
-
+        
         /* Aqui vamos definir o título da página de edição */
-        $data['titulo'] = "CRUD com CodeIgniter | Editar Usuário";
+        //$data['titulo'] = "CRUD com CodeIgniter | Editar Usuário";
 
         /* Carrega o modelo */
         //$this->load->model('pessoas_model');
@@ -85,7 +92,9 @@ class Usuarios extends CI_Controller {
         $data['dados_usuario'] = $this->usuarios_model->editar($idusuario);
 
         /* Carrega a página de edição com os dados da pessoa */
-        $this->load->view('usuarios_edit', $data);
+        $this->load->view('home_header');
+        $this->load->view('home_content_usuario_edit',$data);
+        $this->load->view('home_sidebar');
     }
 
     function atualizar() {
@@ -119,8 +128,8 @@ class Usuarios extends CI_Controller {
         } else {
             /* Senão obtém os dados do formulário */
             $data['idusuario'] = $this->input->post('idusuario');
-            $data['nome'] = ucwords($this->input->post('nome'));//Só a primeira letras em maiusculo
-            $data['email'] = strtolower($this->input->post('email'));//letras em minusculos
+            $data['nome'] = ucwords($this->input->post('nome'));
+            $data['email'] = strtolower($this->input->post('email'));
             $data['senha'] = $this->input->post('senha');
             $data['sexo'] = $this->input->post('sexo');
             $data['endereco'] = $this->input->post('endereco');
@@ -128,7 +137,10 @@ class Usuarios extends CI_Controller {
             $data['estado'] = $this->input->post('estado');
             $data['cep'] = $this->input->post('cep');
             $data['foto'] = $this->input->post('foto');
-            
+
+            /**
+             * TODO: Colocar mais campos
+             */
             /* Carrega o modelo */
             //$this->load->model('pessoas_model');
 

@@ -12,8 +12,8 @@
         <input type="text" name="nome" value="<?php echo set_value('nome'); ?>"/>
         <div class="error"><?php echo form_error('nome'); ?></div>
         
-        <label for="email">Email:</label><br/>
-        <input type="email" name="email" value="<?php echo set_value('email'); ?>"/>
+        <label for="email">E-mail:</label><br/>
+        <input type="text" name="email" value="<?php echo set_value('email'); ?>"/>
         <div class="error"><?php echo form_error('email'); ?></div>
         
         <label for="senha">Senha:</label><br/>
