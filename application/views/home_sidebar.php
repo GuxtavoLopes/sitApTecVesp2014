@@ -9,8 +9,8 @@
         <ul>
             <li class="current"><a href="<?php echo base_url('login'); ?>">Login de Usuários</a></li>
             <li><a href="<?php echo base_url('usuarios'); ?>">Cadastro de Usuário</a></li>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Contact Me</a></li>
+            <li><a href="<?php echo base_url('home'); ?>">Notícias</a></li>
+            <li><a href="home/logout">Logout</a></li>
         </ul>
     </nav>
 
