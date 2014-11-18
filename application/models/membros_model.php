@@ -1,6 +1,6 @@
 <?php
 class membros_model extends CI_Model {
-
+    
     # VALIDA USUÁRIO
     function validate() {
         $this->db->where('nome', $this->input->post('nome')); 
@@ -9,7 +9,7 @@ class membros_model extends CI_Model {
         $query = $this->db->get('usuario'); 
 
         if ($query->num_rows == 1) { 
-            return true; // RETORNA VERDADEIRO
+            return true; // RETORNA VERDADEIRoo
         }
     }
 
