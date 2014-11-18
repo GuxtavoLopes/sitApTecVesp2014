@@ -26,7 +26,7 @@ $config['base_url']	= 'http://127.0.0.1/sitApTecVesp2014/';
 | variable so that it is blank.
 |
 */
-$config['index_page'] = 'index.php';
+$config['index_page'] = '';
 
 /*
 |--------------------------------------------------------------------------
@@ -224,7 +224,7 @@ $config['cache_path'] = '';
 | MUST set an encryption key.  See the user guide for info.
 |
 */
-$config['encryption_key'] = '';
+$config['encryption_key'] = 'ZgHFyY7pCu8LPWpFEeRs';
 
 /*
 |--------------------------------------------------------------------------

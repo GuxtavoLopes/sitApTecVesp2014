@@ -11,7 +11,7 @@
                         need a subtitle.
                 -->
                 <h2><a href="#">Cadastro de Usuário</a></h2>
-               <!-- <p>A free, fully responsive HTML5 site template by HTML5 UP</p> -->
+                <!-- <p>A free, fully responsive HTML5 site template by HTML5 UP</p>-->
             </header>
             <div class="info">
                 <!--
@@ -26,16 +26,15 @@
                 <!--
                         Note: You can change the number of list items in "stats" to whatever you want.
                 -->
-                <!--                
-                                <ul class="stats">
-                                    <li><a href="#" class="icon fa-comment">16</a></li>
-                                    <li><a href="#" class="icon fa-heart">32</a></li>
-                                    <li><a href="#" class="icon fa-twitter">64</a></li>
-                                    <li><a href="#" class="icon fa-facebook">128</a></li>
-                                </ul>
+                <!--
+                <ul class="stats">
+                    <li><a href="#" class="icon fa-comment">16</a></li>
+                    <li><a href="#" class="icon fa-heart">32</a></li>
+                    <li><a href="#" class="icon fa-twitter">64</a></li>
+                    <li><a href="#" class="icon fa-facebook">128</a></li>
+                </ul>
                 -->
-            </div><!-- info -->
-
+            </div><!-- Info-->
             <?php echo form_open('usuarios/inserir', 'id="form-pessoas"'); ?>
 
             <label for="nome">Nome:</label><br/>
@@ -112,9 +111,7 @@
             </div>
             <!-- Fim Lista -->
 
-
         </article>
-
 
         <!-- Pagination -->
 
@@ -131,8 +128,6 @@
             </div>
             <a href="#" class="button next">Next Page</a>
             -->
-        </div><!-- pagination -->
-
-
-    </div><!-- inner -->
+        </div><!-- Pagination -->
+    </div><!-- Inner -->
 </div><!-- Content -->
