@@ -7,10 +7,10 @@
     <!-- Nav -->
     <nav id="nav">
         <ul>
-            <li class="current"><a href="<?php echo base_url('login'); ?>">Login de Usuários</a></li>
+            <li class="current"><a href="#">Latest Post</a></li>
             <li><a href="<?php echo base_url('usuarios'); ?>">Cadastro de Usuário</a></li>
-            <li><a href="<?php echo base_url('home'); ?>">Notícias</a></li>
-            <li><a href="home/logout">Logout</a></li>
+            <li><a href="<?php echo base_url('login'); ?>">Login</a></li>
+            <li><a href="<?php echo base_url('noticias'); ?>">Cadastro de Notícia</a></li>
         </ul>
     </nav>
 

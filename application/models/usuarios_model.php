@@ -1,7 +1,7 @@
 <?php
 
 if (!defined('BASEPATH'))
-    exit('No direct script access allowed');
+    exit('Acesso direto ao script não é permitido');
 
 class Usuarios_model extends CI_Model {
 
@@ -15,15 +15,15 @@ class Usuarios_model extends CI_Model {
     }
 
     function listar() {
-        //Listagem da tabela usuario
+        //Listagem da tabela usuário
         $query = $this->db
-                ->order_by('nome','asc') //Ordem alfabética.
+                ->order_by('nome','asc') //Ordem alfabética
                 ->get('usuario');
         
         return $query->result();
     }
 
-    function editar($idusuario) {        
+    function editar($idusuario) {
         $this->db->where('idusuario', $idusuario);
         $query = $this->db->get('usuario');
         return $query->result();
@@ -39,6 +39,8 @@ class Usuarios_model extends CI_Model {
         $this->db->where('idusuario', $idusuario);
         return $this->db->delete('usuario');
     }
+
 }
+
 /* End of file usuarios_model.php */
-/* Location ./application/views/usuarios_model.php */
+/* Location: ./application/models/usuarios_model.php */
