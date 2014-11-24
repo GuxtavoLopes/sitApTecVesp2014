@@ -1,6 +1,7 @@
 <!-- Content -->
 <div id="content">
     <div class="inner">
+
         <!-- Post -->
         <article class="box post post-excerpt">
             <header>
@@ -9,8 +10,8 @@
                         if they get too long. You can also remove the <p> entirely if you don't
                         need a subtitle.
                 -->
-                <h2><a href="#">Notícias do Dia</a></h2>
-               
+                <h2><a href="#">Welcome to Striped</a></h2>
+                <p>A free, fully responsive HTML5 site template by HTML5 UP</p>
             </header>
             <div class="info">
                 <!--
@@ -68,6 +69,20 @@
                 Nunc nulla velit, fermentum quis interdum quis, convallis eu sapien. Integer sed ipsum ante.
             </p>
         </article>
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <!--<a href="#" class="button previous">Previous Page</a>-->
+            <div class="pages">
+                <a href="#" class="active">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
+                <a href="#">4</a>
+                <span>&hellip;</span>
+                <a href="#">20</a>
+            </div>
+            <a href="#" class="button next">Next Page</a>
+        </div>
 
     </div>
 </div>
