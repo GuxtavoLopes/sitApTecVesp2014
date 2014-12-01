@@ -119,6 +119,7 @@ class Usuarios extends CI_Controller {
                 
                 $foto = $this->upload->data();
                 //var_dump($foto); die();
+                //echo $foto['file_name'];                die();
                 return $foto['file_name'];
             }
             //Fim do envio da imagem
